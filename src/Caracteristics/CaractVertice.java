@@ -37,6 +37,7 @@ public class CaractVertice {
 	public int getTimeF() {
 		return this.timeF;
 	}
+<<<<<<< HEAD
 	public void setValor(Object valor) {
 		this.Valor = valor;
 	}
@@ -52,6 +53,8 @@ public class CaractVertice {
 	public void setTimeF(int timeF) {
 		this.timeF = timeF;
 	}
+=======
+>>>>>>> 705f4771ef3b16f67a194ec64209d3e1cf9be072
 	public static class Builder {
 		private Object Valor;
 		private Collor cor;
