@@ -21,6 +21,13 @@ public class Graph {
 	}
 
 	/* Metodos */
+	public boolean isEmpty() {
+		if(getInfo().getNumVertices() == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	/* Getters e Setters */
 	public List getAllVertices() {
 		return this.allVertices;
