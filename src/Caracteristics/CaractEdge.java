@@ -6,7 +6,7 @@ public class CaractEdge {
 	private Object Valor;
 	private Types tipo;
 	private Collor cor;
-	private boolean biDir;
+	private boolean dir;
 
 	public CaractEdge() {
 		// TODO Auto-generated constructor stub
@@ -16,16 +16,34 @@ public class CaractEdge {
 		// TODO Auto-generated constructor stub
 		this.Valor = b.getValor();
 		this.cor = b.getCor();
-		this.biDir = b.isBiDir();
+		this.dir = b.isDir();
 		this.tipo = Types.Edge;
 	}
-	
-	
-	
+
+
+	// Getters e Setters.
+	public Object getValor() {
+		return this.Valor;
+	}
+	public Collor getCor() {
+		return this.cor;
+	}
+	public boolean isDir() {
+		return this.dir;
+	}
+	public void setValor(Object valor) {
+		Valor = valor;
+	}
+	public void setCor(Collor cor) {
+		this.cor = cor;
+	}
+	public void setDir(boolean dir) {
+		this.dir = dir;
+	}
 	public static class Builder {
 		private Object Valor;
 		private Collor cor;
-		private boolean biDir;
+		private boolean dir;
 		
 		public Builder() {
 			// TODO Auto-generated constructor stub
@@ -39,22 +57,22 @@ public class CaractEdge {
 		public Object getValor() {
 			return this.Valor;
 		}
+		public Collor getCor() {
+			return this.cor;
+		}
+		public boolean isDir() {
+			return this.dir;
+		}
 		public Builder setValor(Object valor) {
 			Valor = valor;
 			return this;
-		}
-		public Collor getCor() {
-			return this.cor;
 		}
 		public Builder setCor(Collor cor) {
 			this.cor = cor;
 			return this;
 		}
-		public boolean isBiDir() {
-			return this.biDir;
-		}
-		public Builder setBiDir(boolean biDir) {
-			this.biDir = biDir;
+		public Builder setBiDir(boolean dir) {
+			this.dir = dir;
 			return this;
 		}
 	}
