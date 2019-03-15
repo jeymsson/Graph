@@ -20,9 +20,27 @@ public class CaractGraph {
 		this.time = b.getTime();
 		this.tipo = Types.Graph;
 	}
-	
-	
-	
+
+
+	// Getters e Setters.
+	public int getNumVertices() {
+		return this.numVertices;
+	}
+	public int getNumEdges() {
+		return this.numEdges;
+	}
+	public int getNumCiclos() {
+		return this.numCiclos;
+	}
+	public int getNumEdgesDir() {
+		return this.numEdgesDir;
+	}
+	public int getNumEdgesBidir() {
+		return this.numEdgesBidir;
+	}
+	public int getTime() {
+		return this.time;
+	}
 	public static class Builder {
 		private int numVertices, numEdges, numCiclos, numEdgesDir, numEdgesBidir, time;
 		
@@ -35,39 +53,21 @@ public class CaractGraph {
 
 
 		// Getters e Setters.
-		public int getNumVertices() {
-			return this.numVertices;
-		}
 		public Builder setNumVertices(int numVertices) {
 			this.numVertices = numVertices;
 			return this;
-		}
-		public int getNumEdges() {
-			return this.numEdges;
 		}
 		public Builder setNumEdges(int numEdges) {
 			this.numEdges = numEdges;
 			return this;
 		}
-		public int getNumCiclos() {
-			return this.numCiclos;
-		}
 		public Builder setNumCiclos(int numCiclos) {
 			this.numCiclos = numCiclos;
 			return this;
 		}
-		public int getNumEdgesDir() {
-			return this.numEdgesDir;
-		}
 		public Builder setNumEdgesDir(int numEdgesDir) {
 			this.numEdgesDir = numEdgesDir;
 			return this;
-		}
-		public int getNumEdgesBidir() {
-			return this.numEdgesBidir;
-		}
-		public int getTime() {
-			return this.time;
 		}
 		public Builder setTime(int time) {
 			this.time = time;
@@ -76,6 +76,24 @@ public class CaractGraph {
 		public Builder setNumEdgesBidir(int numEdgesBidir) {
 			this.numEdgesBidir = numEdgesBidir;
 			return this;
+		}
+		public int getNumVertices() {
+			return this.numVertices;
+		}
+		public int getNumEdges() {
+			return this.numEdges;
+		}
+		public int getNumCiclos() {
+			return this.numCiclos;
+		}
+		public int getNumEdgesDir() {
+			return this.numEdgesDir;
+		}
+		public int getNumEdgesBidir() {
+			return this.numEdgesBidir;
+		}
+		public int getTime() {
+			return this.time;
 		}
 	}
 	

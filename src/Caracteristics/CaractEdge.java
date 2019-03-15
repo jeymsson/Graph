@@ -19,9 +19,18 @@ public class CaractEdge {
 		this.biDir = b.isBiDir();
 		this.tipo = Types.Edge;
 	}
-	
-	
-	
+
+
+	// Getters e Setters.
+	public Object getValor() {
+		return this.Valor;
+	}
+	public Collor getCor() {
+		return this.cor;
+	}
+	public boolean isBiDir() {
+		return this.biDir;
+	}
 	public static class Builder {
 		private Object Valor;
 		private Collor cor;
@@ -39,19 +48,19 @@ public class CaractEdge {
 		public Object getValor() {
 			return this.Valor;
 		}
+		public Collor getCor() {
+			return this.cor;
+		}
+		public boolean isBiDir() {
+			return this.biDir;
+		}
 		public Builder setValor(Object valor) {
 			Valor = valor;
 			return this;
 		}
-		public Collor getCor() {
-			return this.cor;
-		}
 		public Builder setCor(Collor cor) {
 			this.cor = cor;
 			return this;
-		}
-		public boolean isBiDir() {
-			return this.biDir;
 		}
 		public Builder setBiDir(boolean biDir) {
 			this.biDir = biDir;

@@ -19,9 +19,24 @@ public class CaractVertice {
 		this.timeF = b.getTimeF();
 		this.tipo = Types.Vertice;
 	}
-	
-	
-	
+
+
+	// Getters e Setters.
+	public Object getValor() {
+		return this.Valor;
+	}
+	public Collor getCor() {
+		return this.cor;
+	}
+	public float getDistancia() {
+		return this.distancia;
+	}
+	public int getTimeI() {
+		return this.timeI;
+	}
+	public int getTimeF() {
+		return this.timeF;
+	}
 	public static class Builder {
 		private Object Valor;
 		private Collor cor;
@@ -40,33 +55,33 @@ public class CaractVertice {
 		public Object getValor() {
 			return this.Valor;
 		}
+		public Collor getCor() {
+			return this.cor;
+		}
+		public float getDistancia() {
+			return this.distancia;
+		}
+		public int getTimeI() {
+			return this.timeI;
+		}
+		public int getTimeF() {
+			return this.timeF;
+		}
 		public Builder setValor(Object valor) {
 			this.Valor = valor;
 			return this;
-		}
-		public Collor getCor() {
-			return this.cor;
 		}
 		public Builder setCor(Collor cor) {
 			this.cor = cor;
 			return this;
 		}
-		public float getDistancia() {
-			return this.distancia;
-		}
 		public Builder setDistancia(float distancia) {
 			this.distancia = distancia;
 			return this;
 		}
-		public int getTimeI() {
-			return this.timeI;
-		}
 		public Builder setTimeI(int timeI) {
 			this.timeI = timeI;
 			return this;
-		}
-		public int getTimeF() {
-			return this.timeF;
 		}
 		public Builder setTimeF(int timeF) {
 			this.timeF = timeF;
