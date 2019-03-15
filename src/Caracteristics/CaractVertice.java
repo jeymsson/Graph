@@ -24,7 +24,6 @@ public class CaractVertice {
 	
 	public static class Builder {
 		private Object Valor;
-		private Types tipo;
 		private Collor cor;
 		private float distancia;
 		private int timeI, timeF;
@@ -43,13 +42,6 @@ public class CaractVertice {
 		}
 		public Builder setValor(Object valor) {
 			this.Valor = valor;
-			return this;
-		}
-		public Types getTipo() {
-			return this.tipo;
-		}
-		public Builder setTipo(Types tipo) {
-			this.tipo = tipo;
 			return this;
 		}
 		public Collor getCor() {

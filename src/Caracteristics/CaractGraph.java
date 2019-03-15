@@ -4,7 +4,7 @@ import List.List;
 
 public class CaractGraph {
 	private Types tipo;
-	private int numVertices, numEdges, numCiclos, numEdgesDir, numEdgesBidir;
+	private int numVertices, numEdges, numCiclos, numEdgesDir, numEdgesBidir, time;
 
 	public CaractGraph() {
 		// TODO Auto-generated constructor stub
@@ -17,14 +17,14 @@ public class CaractGraph {
 		this.numCiclos = b.getNumCiclos();
 		this.numEdgesDir = b.getNumEdgesDir();
 		this.numEdgesBidir = b.getNumEdgesBidir();
+		this.time = b.getTime();
 		this.tipo = Types.Graph;
 	}
 	
 	
 	
 	public static class Builder {
-		private Types tipo;
-		private int numVertices, numEdges, numCiclos, numEdgesDir, numEdgesBidir;
+		private int numVertices, numEdges, numCiclos, numEdgesDir, numEdgesBidir, time;
 		
 		public Builder() {
 			// TODO Auto-generated constructor stub
@@ -35,13 +35,6 @@ public class CaractGraph {
 
 
 		// Getters e Setters.
-		public Types getTipo() {
-			return this.tipo;
-			}
-		public Builder setTipo(Types tipo) {
-			this.tipo = tipo;
-			return this;
-		}
 		public int getNumVertices() {
 			return this.numVertices;
 		}
@@ -72,6 +65,13 @@ public class CaractGraph {
 		}
 		public int getNumEdgesBidir() {
 			return this.numEdgesBidir;
+		}
+		public int getTime() {
+			return this.time;
+		}
+		public Builder setTime(int time) {
+			this.time = time;
+			return this;
 		}
 		public Builder setNumEdgesBidir(int numEdgesBidir) {
 			this.numEdgesBidir = numEdgesBidir;
