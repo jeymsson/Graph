@@ -53,68 +53,79 @@ public class Caract {
 		public Object getValor() {
 			return this.Valor;
 		}
-		public void setValor(Object valor) {
+		public Builder setValor(Object valor) {
 			Valor = valor;
+			return this;
 		}
 		public Types getTipo() {
 			return this.tipo;
 		}
-		public void setTipo(Types tipo) {
+		public Builder setTipo(Types tipo) {
 			this.tipo = tipo;
+			return this;
 		}
 		public Collor getCor() {
 			return this.cor;
 		}
-		public void setCor(Collor cor) {
+		public Builder setCor(Collor cor) {
 			this.cor = cor;
+			return this;
 		}
 		public Arrow getSeta() {
 			return this.seta;
 		}
-		public void setSeta(Arrow seta) {
+		public Builder setSeta(Arrow seta) {
 			this.seta = seta;
+			return this;
 		}
 		public float getDistancia() {
 			return this.distancia;
 		}
-		public void setDistancia(float distancia) {
+		public Builder setDistancia(float distancia) {
 			this.distancia = distancia;
+			return this;
 		}
 		public int getNumVertices() {
 			return this.numVertices;
 		}
-		public void setNumVertices(int numVertices) {
+		public Builder setNumVertices(int numVertices) {
 			this.numVertices = numVertices;
+			return this;
 		}
 		public int getNumEdges() {
 			return this.numEdges;
 		}
-		public void setNumEdges(int numEdges) {
+		public Builder setNumEdges(int numEdges) {
 			this.numEdges = numEdges;
+			return this;
 		}
 		public int getNumCiclos() {
 			return this.numCiclos;
 		}
-		public void setNumCiclos(int numCiclos) {
+		public Builder setNumCiclos(int numCiclos) {
 			this.numCiclos = numCiclos;
+			return this;
 		}
 		public int getNumEdgesDir() {
 			return this.numEdgesDir;
 		}
-		public void setNumEdgesDir(int numEdgesDir) {
+		public Builder setNumEdgesDir(int numEdgesDir) {
 			this.numEdgesDir = numEdgesDir;
+			return this;
 		}
 		public int getNumEdgesBidir() {
 			return this.numEdgesBidir;
 		}
-		public void setNumEdgesBidir(int numEdgesBidir) {
+		public Builder setNumEdgesBidir(int numEdgesBidir) {
 			this.numEdgesBidir = numEdgesBidir;
+			return this;
 		}
 		public List getListaV() {
 			return this.listaV;
 		}
-		public void setListaV(List listaV) {
+		public Builder setListaV(List listaV) {
 			this.listaV = listaV;
+			return this;
 		}
 	}
 	

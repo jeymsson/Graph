@@ -4,9 +4,9 @@ import Graph.Arrow;
 
 public class CaractEdge {
 	private Object Valor;
-	private Collor cor;
 	private Types tipo;
-	private Arrow setaO, setaD;
+	private Collor cor;
+	private boolean biDir;
 
 	public CaractEdge() {
 		// TODO Auto-generated constructor stub
@@ -16,8 +16,7 @@ public class CaractEdge {
 		// TODO Auto-generated constructor stub
 		this.Valor = b.getValor();
 		this.cor = b.getCor();
-		this.setaO = b.getSetaO();
-		this.setaD = b.getSetaD();
+		this.biDir = b.isBiDir();
 		this.tipo = Types.Edge;
 	}
 	
@@ -26,7 +25,7 @@ public class CaractEdge {
 	public static class Builder {
 		private Object Valor;
 		private Collor cor;
-		private Arrow setaO, setaD;
+		private boolean biDir;
 		
 		public Builder() {
 			// TODO Auto-generated constructor stub
@@ -40,26 +39,23 @@ public class CaractEdge {
 		public Object getValor() {
 			return this.Valor;
 		}
-		public void setValor(Object valor) {
+		public Builder setValor(Object valor) {
 			Valor = valor;
+			return this;
 		}
 		public Collor getCor() {
 			return this.cor;
 		}
-		public void setCor(Collor cor) {
+		public Builder setCor(Collor cor) {
 			this.cor = cor;
+			return this;
 		}
-		public Arrow getSetaO() {
-			return setaO;
+		public boolean isBiDir() {
+			return this.biDir;
 		}
-		public void setSetaO(Arrow setaO) {
-			this.setaO = setaO;
-		}
-		public Arrow getSetaD() {
-			return setaD;
-		}
-		public void setSetaD(Arrow setaD) {
-			this.setaD = setaD;
+		public Builder setBiDir(boolean biDir) {
+			this.biDir = biDir;
+			return this;
 		}
 	}
 	
