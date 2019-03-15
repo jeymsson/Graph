@@ -21,6 +21,18 @@ public class Edge {
 		setSetaO(new Arrow.Builder().setVertice(origem).Build());
 		setSetaD(new Arrow.Builder().setVertice(detino).Build());
 	}
+	public Edge(Vertice origem, Arrow detino) {
+		// TODO Auto-generated constructor stub
+		setInfo(new CaractEdge());
+		setSetaO(new Arrow.Builder().setVertice(origem).Build());
+		setSetaD(detino);
+	}
+	public Edge(Arrow origem, Vertice detino) {
+		// TODO Auto-generated constructor stub
+		setInfo(new CaractEdge());
+		setSetaO(origem);
+		setSetaD(new Arrow.Builder().setVertice(detino).Build());
+	}
 
 
 	/* Getters e Setters */
