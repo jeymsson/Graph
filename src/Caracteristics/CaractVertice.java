@@ -41,38 +41,44 @@ public class CaractVertice {
 		public Object getValor() {
 			return this.Valor;
 		}
-		public void setValor(Object valor) {
+		public Builder setValor(Object valor) {
 			this.Valor = valor;
+			return this;
 		}
 		public Types getTipo() {
 			return this.tipo;
 		}
-		public void setTipo(Types tipo) {
+		public Builder setTipo(Types tipo) {
 			this.tipo = tipo;
+			return this;
 		}
 		public Collor getCor() {
 			return this.cor;
 		}
-		public void setCor(Collor cor) {
+		public Builder setCor(Collor cor) {
 			this.cor = cor;
+			return this;
 		}
 		public float getDistancia() {
 			return this.distancia;
 		}
-		public void setDistancia(float distancia) {
+		public Builder setDistancia(float distancia) {
 			this.distancia = distancia;
+			return this;
 		}
 		public int getTimeI() {
 			return this.timeI;
 		}
-		public void setTimeI(int timeI) {
+		public Builder setTimeI(int timeI) {
 			this.timeI = timeI;
+			return this;
 		}
 		public int getTimeF() {
 			return this.timeF;
 		}
-		public void setTimeF(int timeF) {
+		public Builder setTimeF(int timeF) {
 			this.timeF = timeF;
+			return this;
 		}
 	}
 	
