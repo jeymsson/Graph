@@ -65,7 +65,6 @@ public class Caract {
 	public List getListaV() {
 		return this.listaV;
 	}
-<<<<<<< HEAD
 	public void setValor(Object valor) {
 		Valor = valor;
 	}
@@ -99,8 +98,6 @@ public class Caract {
 	public void setListaV(List listaV) {
 		this.listaV = listaV;
 	}
-=======
->>>>>>> 705f4771ef3b16f67a194ec64209d3e1cf9be072
 	public static class Builder {
 		private Object Valor;
 		private Types tipo;

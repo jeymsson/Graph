@@ -23,7 +23,6 @@ public class CaractGraph {
 
 
 	// Getters e Setters.
-<<<<<<< HEAD
 	public void setNumVertices(int numVertices) {
 		this.numVertices = numVertices;
 	}
@@ -42,8 +41,6 @@ public class CaractGraph {
 	public void setNumEdgesBidir(int numEdgesBidir) {
 		this.numEdgesBidir = numEdgesBidir;
 	}
-=======
->>>>>>> 705f4771ef3b16f67a194ec64209d3e1cf9be072
 	public int getNumVertices() {
 		return this.numVertices;
 	}

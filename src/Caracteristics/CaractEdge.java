@@ -28,7 +28,6 @@ public class CaractEdge {
 	public Collor getCor() {
 		return this.cor;
 	}
-<<<<<<< HEAD
 	public boolean isDir() {
 		return this.dir;
 	}
@@ -40,10 +39,6 @@ public class CaractEdge {
 	}
 	public void setDir(boolean dir) {
 		this.dir = dir;
-=======
-	public boolean isBiDir() {
-		return this.biDir;
->>>>>>> 705f4771ef3b16f67a194ec64209d3e1cf9be072
 	}
 	public static class Builder {
 		private Object Valor;
@@ -65,13 +60,8 @@ public class CaractEdge {
 		public Collor getCor() {
 			return this.cor;
 		}
-<<<<<<< HEAD
 		public boolean isDir() {
 			return this.dir;
-=======
-		public boolean isBiDir() {
-			return this.biDir;
->>>>>>> 705f4771ef3b16f67a194ec64209d3e1cf9be072
 		}
 		public Builder setValor(Object valor) {
 			Valor = valor;
@@ -81,13 +71,8 @@ public class CaractEdge {
 			this.cor = cor;
 			return this;
 		}
-<<<<<<< HEAD
-		public Builder setBiDir(boolean dir) {
+		public Builder setDir(boolean dir) {
 			this.dir = dir;
-=======
-		public Builder setBiDir(boolean biDir) {
-			this.biDir = biDir;
->>>>>>> 705f4771ef3b16f67a194ec64209d3e1cf9be072
 			return this;
 		}
 	}
