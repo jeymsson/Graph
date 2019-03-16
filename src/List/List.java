@@ -5,13 +5,14 @@ public class List {
 	/* Variaveis */
 	private Node head, tail;
 	private int numNodes;
-	private boolean log = false;
+	private boolean log;
 	
 	/* Construtores */
 	public List() {
 		setNumNodes(0);
 		setHead(null);
 		setTail(null);
+		setLog(false);
 	}
 	
 	/* Getters e Setters */
@@ -39,6 +40,11 @@ public class List {
 	private <G> boolean sendLog(G value) {
 		if(getLog())
 			System.out.println(value);
+		return getLog();
+	}
+	private <G> boolean sendLogs(G value) {
+		if(getLog())
+			System.out.print(value);
 		return getLog();
 	}
 	public boolean getLog() {
@@ -116,6 +122,13 @@ public class List {
 			setNumNodes(getNumNodes() -1);
 		}
 		return ret;
+	}
+	public void printValues() {
+		Node temp = getHead();
+		while (temp != null) {
+			sendLogs(", "+temp.obj);
+			temp = temp.getNext();
+		}
 	}
 
 }
