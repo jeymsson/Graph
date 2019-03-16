@@ -6,7 +6,7 @@ public class CaractEdge {
 	private Object Valor;
 	private Types tipo;
 	private Collor cor;
-	private boolean dir;
+	private boolean dir; //Se não é direcionada ou nao (bidirecionada)
 
 	public CaractEdge() {
 		// TODO Auto-generated constructor stub

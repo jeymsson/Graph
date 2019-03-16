@@ -1,11 +1,14 @@
 package Caracteristics;
 
+import Graph.Edge;
+
 public class CaractVertice {
 	private Object Valor;
 	private Types tipo;
 	private Collor cor;
 	private float distancia;
 	private int timeI, timeF;
+	private Edge Pai;
 
 	public CaractVertice() {
 		// TODO Auto-generated constructor stub
@@ -17,6 +20,7 @@ public class CaractVertice {
 		this.distancia = b.getDistancia();
 		this.timeI = b.getTimeI();
 		this.timeF = b.getTimeF();
+		this.Pai = b.getPai();
 		this.tipo = Types.Vertice;
 	}
 
@@ -52,11 +56,18 @@ public class CaractVertice {
 	public void setTimeF(int timeF) {
 		this.timeF = timeF;
 	}
+	public Edge getPai() {
+		return Pai;
+	}
+	public void setPai(Edge pai) {
+		Pai = pai;
+	}
 	public static class Builder {
 		private Object Valor;
 		private Collor cor;
 		private float distancia;
 		private int timeI, timeF;
+		private Edge Pai;
 		
 		public Builder() {
 			// TODO Auto-generated constructor stub
@@ -82,6 +93,9 @@ public class CaractVertice {
 		public int getTimeF() {
 			return this.timeF;
 		}
+		public Edge getPai() {
+			return Pai;
+		}
 		public Builder setValor(Object valor) {
 			this.Valor = valor;
 			return this;
@@ -100,6 +114,10 @@ public class CaractVertice {
 		}
 		public Builder setTimeF(int timeF) {
 			this.timeF = timeF;
+			return this;
+		}
+		public Builder setPai(Edge pai) {
+			Pai = pai;
 			return this;
 		}
 	}

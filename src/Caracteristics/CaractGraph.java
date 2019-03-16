@@ -4,7 +4,7 @@ import List.List;
 
 public class CaractGraph {
 	private Types tipo;
-	private int numVertices, numEdges, numCiclos, numEdgesDir, numEdgesBidir, time;
+	private int numVertices, numEdges, numCiclos, numEdgesDir, time;
 
 	public CaractGraph() {
 		// TODO Auto-generated constructor stub
@@ -16,7 +16,6 @@ public class CaractGraph {
 		this.numEdges = b.getNumEdges();
 		this.numCiclos = b.getNumCiclos();
 		this.numEdgesDir = b.getNumEdgesDir();
-		this.numEdgesBidir = b.getNumEdgesBidir();
 		this.time = b.getTime();
 		this.tipo = Types.Graph;
 	}
@@ -38,9 +37,6 @@ public class CaractGraph {
 	public void setTime(int time) {
 		this.time = time;
 	}
-	public void setNumEdgesBidir(int numEdgesBidir) {
-		this.numEdgesBidir = numEdgesBidir;
-	}
 	public int getNumVertices() {
 		return this.numVertices;
 	}
@@ -53,14 +49,11 @@ public class CaractGraph {
 	public int getNumEdgesDir() {
 		return this.numEdgesDir;
 	}
-	public int getNumEdgesBidir() {
-		return this.numEdgesBidir;
-	}
 	public int getTime() {
 		return this.time;
 	}
 	public static class Builder {
-		private int numVertices, numEdges, numCiclos, numEdgesDir, numEdgesBidir, time;
+		private int numVertices, numEdges, numCiclos, numEdgesDir, time;
 		
 		public Builder() {
 			// TODO Auto-generated constructor stub
@@ -91,10 +84,6 @@ public class CaractGraph {
 			this.time = time;
 			return this;
 		}
-		public Builder setNumEdgesBidir(int numEdgesBidir) {
-			this.numEdgesBidir = numEdgesBidir;
-			return this;
-		}
 		public int getNumVertices() {
 			return this.numVertices;
 		}
@@ -106,9 +95,6 @@ public class CaractGraph {
 		}
 		public int getNumEdgesDir() {
 			return this.numEdgesDir;
-		}
-		public int getNumEdgesBidir() {
-			return this.numEdgesBidir;
 		}
 		public int getTime() {
 			return this.time;
