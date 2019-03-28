@@ -15,6 +15,19 @@ public class Arrow {
 		this.vertice = b.getVertice();
 	}
 
+	// Getters e Setters.
+	public Vertice getVertice() {
+		return this.vertice;
+	}
+	public void setVertice(Vertice vertice) {
+		this.vertice = vertice;
+	}
+	public boolean isSeta() {
+		return this.seta;
+	}
+	public void setSeta(boolean seta) {
+		this.seta = seta;
+	}
 	public static class Builder {
 		private Vertice vertice;
 		private boolean seta;
